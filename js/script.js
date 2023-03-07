@@ -1,29 +1,44 @@
+// non abbiamo ancora spiegato le funzioni
 // VARIABLES
-
 let firstName;
 let surname;
 let favouriteColor;
+let password;
 const currentYear = "23"
-
 // GIVE INSTRUCTION TO THE USER 
 alert("Compila i campi per generare la tua password personalizzata");
-
-// ASK USER FOR HIS DATA
-
+// CHECK STEP-BY-STEP IF USER COMPLETED ALL THE INPUT AND IF HE DID NOT ENTER ANY NUMBERS 
+// ASK INPUT
 firstName = prompt("Qual è il tuo nome?");
-surname = prompt("Qual è il tuo cognome?");
-favouriteColor = prompt("Qual è il tuo colore preferito?");
-
-// CHECK IF USER COMPLETED ALL THE INPUT AND IF HE DID NOT ENTER ANY NUMBERS 
-
-// IF SO WRITE THE DATA IN generated-pwd
-if (isNaN(firstName) && isNaN(surname) && isNaN(favouriteColor) && firstName && surname && favouriteColor) {
-    document.getElementById("generated-pwd").innerHTML = firstName + surname + favouriteColor + currentYear;
+// CHECK INPUT
+if (isNaN(firstName) && firstName) {
+    // ASK INPUT
+    surname = prompt("Qual è il tuo cognome?");
+    // CHECK INPUT
+    if (isNaN(surname) && surname) {
+        //ASK INPUT
+        favouriteColor = prompt("Qual è il tuo colore preferito?");
+        //CHECK INPUT
+        if (isNaN(favouriteColor && favouriteColor)) {
+            //ALL CHECK PASSED, SET VARIABLE WITH ALL THE INFO
+            password = firstName + surname + favouriteColor + currentYear;
+            //WRITE VARIABLE IN HTML
+            document.getElementById("generated-pwd").innerHTML = password;
+        }
+        else {
+            //CHECK FAILED
+            alert("Non hai inserito nulla, oppure hai inserito un numero.");
+            location.reload();
+        }
+    }
+    else {
+        //CHECK FAILED
+        alert("Non hai inserito nulla, oppure hai inserito un numero.");
+        location.reload();
+    }
 }
-
-// OTHERWISE SHOW AN ALERT AND RELOAD THE PAGE
 else {
-    alert("Non hai completato uno dei 3 campi o hai inserito dei numeri, riprova!");
+    //CHECK FAILED
+    alert("Non hai inserito nulla, oppure hai inserito un numero.");
     location.reload();
 }
-
