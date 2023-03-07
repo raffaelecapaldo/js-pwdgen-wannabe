@@ -22,6 +22,8 @@ if (isNaN(firstName) && firstName) {
         if (isNaN(favouriteColor && favouriteColor)) {
             //ALL CHECK PASSED, SET VARIABLE WITH ALL THE INFO
             password = firstName + surname + favouriteColor + currentYear;
+            //REMOVE ALL THE SPACES FROM THE VARIABLE (passwords have no spaces)
+            password = password.replace(/ /g, '');
             //WRITE VARIABLE IN HTML
             document.getElementById("generated-pwd").innerHTML = password;
         }
