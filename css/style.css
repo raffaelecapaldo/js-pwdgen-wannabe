@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6EFAC9;
+}
+
+.container {
+    width: 100%;
+
+}
+
+.box-generator {
+    width: 70%;
+    background-color: #C2FA6E;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.subtitle {
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+.pwd-container {
+
+    background-color: #6EFAC9;
+    color: #6EFAC9;
+    width: 40%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pwd-container span {
+    color: black;
+
+}
+
+.pwd-container:hover {
+    color: black;
+}
+
+
+.pwd-container:hover #lock {
+    display: none;
+}
+
+#unlock {
+    display: none;
+}
+
+.pwd-container:hover #unlock {
+    display: inline-block;
+}
