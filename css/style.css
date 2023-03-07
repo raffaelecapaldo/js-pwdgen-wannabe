@@ -20,6 +20,7 @@ body {
     text-align: center;
     border-radius: 10px;
     padding-bottom: 10px;
+    padding:10px;
 }
 
 .red {
@@ -37,7 +38,7 @@ body {
     width: fit-content;
     margin: 20px auto;
     font-size: 1.2rem;
-    text-align: left;
+    text-align: center;
     padding: 10px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
