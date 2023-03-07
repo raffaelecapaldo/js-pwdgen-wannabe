@@ -14,6 +14,16 @@ firstname = prompt("Qual è il tuo nome?");
 surname = prompt("Qual è il tuo cognome?");
 favouritecolor = prompt("Qual è il tuo colore preferito?");
 
-// WRITE DATA IN THE generated-pwd SPAN 
+// CHECK IF USER WRITED SOMETHING ON ALL THE PROMPT
 
-document.getElementById("generated-pwd").innerHTML = firstname + surname + favouritecolor + currentyear;
+// IF SO WRITE THE DATA IN generated-pwd
+if (firstname && surname && favouritecolor) {
+    document.getElementById("generated-pwd").innerHTML = firstname + surname + favouritecolor + currentyear;
+}
+
+// OTHERWISE SHOW AN ALERT AND RELOAD THE PAGE
+else {
+alert("Non hai completato uno dei 3 campi, riprova!");
+location.reload();
+}
+
