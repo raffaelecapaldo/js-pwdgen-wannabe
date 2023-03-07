@@ -34,21 +34,22 @@ body {
 .pwd-container {
 
     background-color: #6EFAC9;
-    color: #6EFAC9;
+    color: black;
     width: 40%;
     margin: 20px auto;
     font-size: 1.2rem;
     text-align: left;
     padding: 10px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.pwd-container span {
-    color: black;
 
+#generated-pwd {
+    color:#6EFAC9;
 }
 
-.pwd-container:hover {
+.pwd-container:hover #generated-pwd {
     color: black;
 }
 
