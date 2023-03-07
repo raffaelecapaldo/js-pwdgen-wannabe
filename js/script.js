@@ -23,7 +23,7 @@ if (isNaN(firstname) && isNaN(surname) && isNaN(favouritecolor) && firstname && 
 
 // OTHERWISE SHOW AN ALERT AND RELOAD THE PAGE
 else {
-alert("Non hai completato uno dei 3 campi o hai inserito dei numeri, riprova!");
-location.reload();
+    alert("Non hai completato uno dei 3 campi o hai inserito dei numeri, riprova!");
+    location.reload();
 }
 

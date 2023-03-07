@@ -10,7 +10,6 @@ body {
 
 .container {
     width: 100%;
-
 }
 
 .box-generator {
@@ -33,7 +32,6 @@ body {
 }
 
 .pwd-container {
-
     background-color: #6EFAC9;
     color: black;
     width: fit-content;
@@ -45,16 +43,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-
 #generated-pwd {
-    color:#6EFAC9;
+    color: #6EFAC9;
     text-align: right;
 }
 
 .pwd-container:hover #generated-pwd {
     color: black;
 }
-
 
 .pwd-container:hover #lock {
     display: none;
