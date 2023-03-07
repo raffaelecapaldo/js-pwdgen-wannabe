@@ -1,24 +1,24 @@
 // VARIABLES
 
-let firstname;
+let firstName;
 let surname;
-let favouritecolor;
-const currentyear = "23"
+let favouriteColor;
+const currentYear = "23"
 
 // GIVE INSTRUCTION TO THE USER 
 alert("Compila i campi per generare la tua password personalizzata");
 
 // ASK USER FOR HIS DATA
 
-firstname = prompt("Qual è il tuo nome?");
+firstName = prompt("Qual è il tuo nome?");
 surname = prompt("Qual è il tuo cognome?");
-favouritecolor = prompt("Qual è il tuo colore preferito?");
+favouriteColor = prompt("Qual è il tuo colore preferito?");
 
 // CHECK IF USER COMPLETED ALL THE INPUT AND IF HE DID NOT ENTER ANY NUMBERS 
 
 // IF SO WRITE THE DATA IN generated-pwd
-if (isNaN(firstname) && isNaN(surname) && isNaN(favouritecolor) && firstname && surname && favouritecolor) {
-    document.getElementById("generated-pwd").innerHTML = firstname + surname + favouritecolor + currentyear;
+if (isNaN(firstName) && isNaN(surname) && isNaN(favouriteColor) && firstName && surname && favouriteColor) {
+    document.getElementById("generated-pwd").innerHTML = firstName + surname + favouriteColor + currentYear;
 }
 
 // OTHERWISE SHOW AN ALERT AND RELOAD THE PAGE
